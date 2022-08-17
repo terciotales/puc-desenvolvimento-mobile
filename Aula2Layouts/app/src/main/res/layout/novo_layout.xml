@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Aula 2 - Trabalhando Layout"
+        android:layout_marginTop="50dp"
+        android:textColor="#F44336"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Digite seu nome"
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:background=""
+        android:text="Entrar" />
+
+</RelativeLayout>
