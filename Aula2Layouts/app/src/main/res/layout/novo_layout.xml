@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Aula 2 - Trabalhando Layout"
+        android:text="@string/aula_2_trabalhando_layout"
         android:layout_marginTop="50dp"
         android:textColor="#F44336"
         android:textSize="20dp" />
