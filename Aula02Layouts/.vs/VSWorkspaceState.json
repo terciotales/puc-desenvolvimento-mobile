@@ -1,0 +1,20 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\src",
+    "\\app\\src\\androidTest",
+    "\\app\\src\\androidTest\\java",
+    "\\app\\src\\androidTest\\java\\com",
+    "\\app\\src\\androidTest\\java\\com\\example",
+    "\\app\\src\\androidTest\\java\\com\\example\\aula2_layouts",
+    "\\app\\src\\main",
+    "\\app\\src\\main\\java",
+    "\\app\\src\\main\\java\\com",
+    "\\app\\src\\main\\java\\com\\example",
+    "\\app\\src\\main\\java\\com\\example\\aula2_layouts",
+    "\\app\\src\\test"
+  ],
+  "SelectedNode": "\\app\\src\\main\\java\\com\\example\\aula2_layouts\\MainActivity.java",
+  "PreviewInSolutionExplorer": false
+}
