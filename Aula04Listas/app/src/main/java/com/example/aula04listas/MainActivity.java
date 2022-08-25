@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -34,9 +36,30 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nomes.add(ed01.getText().toString());
+                String text = ed01.getText().toString();
 
-                lista.setAdapter(adapter);
+                if (!text.isEmpty() && !nomes.contains(text)) {
+                    nomes.add(text);
+
+                    lista.setAdapter(adapter);
+
+                    ed01.setText("");
+
+                    Toast.makeText(MainActivity.this, "Nome " + text + " foi adicionado.", Toast.LENGTH_SHORT).show();
+                } else if (text.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Não há texto para adicionar.", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(MainActivity.this, "O nome " + text + " já foi adicionado na lista.", Toast.LENGTH_SHORT).show();
+
+                    ed01.setText("");
+                }
+            }
+        });
+
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(MainActivity.this, "Clicou em " + nomes.get(i), Toast.LENGTH_SHORT).show();
             }
         });
 
