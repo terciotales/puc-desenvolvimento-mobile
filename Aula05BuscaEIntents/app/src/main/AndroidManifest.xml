@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Aula05BuscaEIntents"
         tools:targetApi="31">
         <activity
+            android:name=".SegundaTela"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
