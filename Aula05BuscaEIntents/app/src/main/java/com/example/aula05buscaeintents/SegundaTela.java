@@ -24,7 +24,7 @@ public class SegundaTela extends AppCompatActivity {
         Intent dadosRecebidos = getIntent();
 
         nome.setText("Nome: " + dadosRecebidos.getStringExtra("nome"));
-        telefone.setText("Nome: " + dadosRecebidos.getStringExtra("telefone"));
+        telefone.setText("Telefone: " + dadosRecebidos.getStringExtra("telefone"));
 
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override
