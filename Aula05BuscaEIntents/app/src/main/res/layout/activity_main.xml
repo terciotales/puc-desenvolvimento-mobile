@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/titulo"
+        android:id="@+id/busca"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -20,7 +20,7 @@
         android:layout_width="60dp"
         android:layout_height="49dp"
         android:layout_marginTop="35dp"
-        android:layout_toRightOf="@id/titulo"
+        android:layout_toRightOf="@id/busca"
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <ListView
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/ed01"
-        android:layout_below="@id/titulo"
+        android:layout_below="@id/busca"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp" />
