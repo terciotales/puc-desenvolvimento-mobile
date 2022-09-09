@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <Button
-        android:id="@+id/btnA"
+        android:id="@+id/btn_A"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text="Botão A" />
-
+        android:text="Tela 1"
+        android:layout_marginLeft="20dp"/>
     <Button
-        android:id="@+id/btnB"
+        android:id="@+id/btn_B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text="Botão B" />
-
+        android:text="Calendario"
+        android:layout_marginLeft="20dp"/>
     <Button
-        android:id="@+id/btnC"
+        android:id="@+id/btn_C"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text="Botão C" />
-
+        android:text="Tela 2"
+        android:layout_marginHorizontal="20dp"/>
 </LinearLayout>
