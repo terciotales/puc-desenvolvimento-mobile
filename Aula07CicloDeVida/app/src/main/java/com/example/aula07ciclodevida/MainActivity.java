@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, TelaUm.class);
                 startActivity(i);
+                finish();
             }
         });
 
