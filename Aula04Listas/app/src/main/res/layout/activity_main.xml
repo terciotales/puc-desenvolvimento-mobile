@@ -36,21 +36,19 @@
 
     <Button
         android:id="@+id/btn01"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Inserir"
-        android:textSize="20dp"
         android:layout_above="@id/frame"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
         />
     <Button
-        android:layout_width="210dp"
+        android:layout_width="wrap_content"
         android:id="@+id/btn_delete"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="false"
         android:text="Apagar todos"
-        android:textSize="20dp"
         android:layout_above="@id/frame"
         android:layout_marginBottom="20dp"
         android:layout_alignParentRight="true"
