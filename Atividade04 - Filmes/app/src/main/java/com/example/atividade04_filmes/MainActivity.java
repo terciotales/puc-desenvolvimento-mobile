@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!filme1.getText().toString().isEmpty() && !filme2.getText().toString().isEmpty() && !filme3.getText().toString().isEmpty() && !filme4.getText().toString().isEmpty() && !filme5.getText().toString().isEmpty()) {
                     Intent i = new Intent(MainActivity.this, SegundaTela.class);
+                    i.putExtra("filme1", filme1.getText().toString());
+                    i.putExtra("filme2", filme2.getText().toString());
+                    i.putExtra("filme3", filme3.getText().toString());
+                    i.putExtra("filme4", filme4.getText().toString());
+                    i.putExtra("filme5", filme5.getText().toString());
                     startActivity(i);
                     finish();
                 } else {
