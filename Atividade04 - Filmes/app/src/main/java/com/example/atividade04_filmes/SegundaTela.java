@@ -54,7 +54,6 @@ public class SegundaTela extends AppCompatActivity {
                 Intent intent = new Intent(SegundaTela.this, TerceiraTela.class);
                 intent.putExtra("nome_filme", filmes.get(i));
                 startActivity(intent);
-                finish();
             }
         });
 
