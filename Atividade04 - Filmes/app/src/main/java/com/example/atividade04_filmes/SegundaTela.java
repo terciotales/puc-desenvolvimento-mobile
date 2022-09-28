@@ -46,6 +46,12 @@ public class SegundaTela extends AppCompatActivity {
         filmes.add(dadosRecebidos.getStringExtra("filme4"));
         filmes.add(dadosRecebidos.getStringExtra("filme5"));
 
+        String filme1 = dadosRecebidos.getStringExtra("filme1");
+        String filme2 = dadosRecebidos.getStringExtra("filme2");
+        String filme3 = dadosRecebidos.getStringExtra("filme3");
+        String filme4 = dadosRecebidos.getStringExtra("filme4");
+        String filme5 = dadosRecebidos.getStringExtra("filme5");
+
         lista.setAdapter(adapter);
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -53,7 +59,13 @@ public class SegundaTela extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(SegundaTela.this, TerceiraTela.class);
                 intent.putExtra("nome_filme", filmes.get(i));
+                intent.putExtra("filme1", filme1);
+                intent.putExtra("filme2", filme2);
+                intent.putExtra("filme3", filme3);
+                intent.putExtra("filme4", filme4);
+                intent.putExtra("filme5", filme5);
                 startActivity(intent);
+                finish();
             }
         });
 

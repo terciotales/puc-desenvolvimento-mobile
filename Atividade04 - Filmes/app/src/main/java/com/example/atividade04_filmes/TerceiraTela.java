@@ -60,6 +60,12 @@ public class TerceiraTela extends AppCompatActivity {
         nota = findViewById(R.id.nota);
 
         Intent dadosRecebidos = getIntent();
+        String filme1 = dadosRecebidos.getStringExtra("filme1");
+        String filme2 = dadosRecebidos.getStringExtra("filme2");
+        String filme3 = dadosRecebidos.getStringExtra("filme3");
+        String filme4 = dadosRecebidos.getStringExtra("filme4");
+        String filme5 = dadosRecebidos.getStringExtra("filme5");
+
         titulo.setText(dadosRecebidos.getStringExtra("nome_filme"));
 
         int random = rand.nextInt(4);
@@ -74,6 +80,11 @@ public class TerceiraTela extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(TerceiraTela.this, SegundaTela.class);
+                i.putExtra("filme1", filme1);
+                i.putExtra("filme2", filme2);
+                i.putExtra("filme3", filme3);
+                i.putExtra("filme4", filme4);
+                i.putExtra("filme5", filme5);
                 startActivity(i);
                 finish();
             }
